@@ -24,7 +24,10 @@ libudev = ["mio-serial/libudev"]
 rt = ["tokio/rt-multi-thread"]
 codec = ["tokio-util/codec", "bytes"]
 
-[dependencies.futures]
+[dependencies.futures-core]
+version = "0.3"
+
+[dependencies.futures-sink]
 version = "0.3"
 
 [dependencies.tokio]
@@ -69,6 +72,10 @@ default-features = false
 
 [dev-dependencies]
 anyhow = "1.0.91"
+
+[dev-dependencies.futures-util]
+version = "0.3"
+default-features = false
 
 [dev-dependencies.tokio]
 version = "^1.8"
