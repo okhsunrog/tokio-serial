@@ -47,6 +47,8 @@ features = ["codec"]
 
 [dependencies.mio-serial]
 version = "5.0.3"
+git = "https://github.com/okhsunrog/mio-serial"
+rev = "1007386572d0c33209a3e7b0bb45bfa214ce7c75"
 default-features = false
 
 [dependencies.bytes]
@@ -67,7 +69,9 @@ version = "0.4"
 version = "1"
 
 [dependencies.serialport]
-version = "4"
+version = "4.7.1-alpha.0"
+git = "https://github.com/sola-contrib/serialport-rs"
+rev = "81dfac315b5b9aa31625068449bd307e1ce34308"
 default-features = false
 
 [dev-dependencies]
